@@ -77,7 +77,7 @@ population_data = list( # need to give f_old and B
 
 # our model is ran here
 fit1 <- stan(
-  file = "02-modelA.stan",  # Stan program
+  file = "Mod2Stan.stan",  # Stan program
   data = population_data,  # named list of data
   chains = 4,              # number of Markov chains
   warmup = 1000,           # number of warmup iterations per chain
