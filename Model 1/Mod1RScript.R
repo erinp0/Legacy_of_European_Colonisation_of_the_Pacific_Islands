@@ -36,7 +36,7 @@ library(rstan)
 
 # our model is ran here
 fit1 <- stan(
-  file = "01-model.stan",  # Stan program
+  file = "Mod1Stan.stan",  # Stan program
   data = population_data,  # named list of data
   chains = 4,              # number of Markov chains
   warmup = 1000,           # number of warmup iterations per chain
