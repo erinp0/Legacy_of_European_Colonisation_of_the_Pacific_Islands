@@ -1,0 +1,24 @@
+"Officer" "Sailor"
+"Cumbria" 2 1
+"Devon" 5 7
+"Ireland" 3 15
+"Italy" 0 1
+"Lincoln" 1 4
+"Merseyside" 3 5
+"NE Scotland" 1 7
+"Northumbria" 1 7
+"NW Scotland" 1 3
+"NW Wales" 3 3
+"Orkneys" 0 2
+"S England" 0 3
+"SC England" 2 11
+"SE England" 16 53
+"Yorkshire" 2 8
+"Anglia" 1 3
+"SE Wales" 0 1
+"France" 0 1
+"NI SW Scotland" 0 1
+"North America" 0 4
+"Cornwall" 2 0
+"Germany" 0 1
+"NC England" 1 1
