@@ -130,7 +130,7 @@ list_of_data = list(K=dim(B)[1],
 
 # MODEL FITTED HERE
 fit7g <- stan(
-  file = "4-stan.stan",  # Stan program
+  file = "Mod4Stan.stan",  # Stan program
   data = list_of_data,  # named list of data
   chains = 2,              # number of Markov chains
   warmup = 1000,           # number of warmup iterations per chain
@@ -182,18 +182,11 @@ old_true = data.frame(f_old=f_old,
 sample_f_true = pars7g[,c("f_true[1]","f_true[2]","f_true[3]")]
 sample_cov = cov(sample_f_true)
 
-
 #calculate sample mean for f_true
 sample_mean = fest7g
 
 #calculate xbar - mu
 xbar_mu = sample_mean - f_old
-
-#calculate a*
-inverse_sample_cov = solve(sample_cov,tol = 1e-18)
-inverse_sample_cov2 =ginv(cov(sample_f_true))
-a_star = inverse_sample_cov2 %*% xbar_mu
-
 
 ## mahalanobis distance
 N=35
