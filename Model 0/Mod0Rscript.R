@@ -28,7 +28,7 @@ data_frame(y, z = as.factor(z)) %>%
 pop_data = list(N= N, y = y, n_groups = 3)
 library(rstan)
 fit1 <- stan(
-  file = "0-modelstan.stan",  # Stan program
+  file = "Mod0Stan.stan",  # Stan program
   data = pop_data,  # named list of data
   chains = 4,              # number of Markov chains
   warmup = 1000,           # number of warmup iterations per chain
