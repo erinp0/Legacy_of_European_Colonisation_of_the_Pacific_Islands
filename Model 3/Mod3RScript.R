@@ -53,7 +53,7 @@ population_data4g = simpop(25,B,gens=4,f_old,sigma_fchange=1000)
 population_data7g = simpop(25,B,gens=7,f_old,sigma_fchange=1000)
 ## our model is ran here
 fit2g <- stan(
-  file = "03dan-stan.stan",  # Stan program
+  file = "Mod3Stan.stan",  # Stan program
   data = population_data2g,  # named list of data
   chains = 2,              # number of Markov chains
   warmup = 1000,           # number of warmup iterations per chain
@@ -61,7 +61,7 @@ fit2g <- stan(
   cores = 1,               # number of cores (could use one per chain)
 )
 fit4g <- stan(
-  file = "03dan-stan.stan",  # Stan program
+  file = "Mod3Stan.stan",  # Stan program
   data = population_data4g,  # named list of data
   chains = 2,              # number of Markov chains
   warmup = 1000,           # number of warmup iterations per chain
@@ -69,7 +69,7 @@ fit4g <- stan(
   cores = 1,               # number of cores (could use one per chain)
 )
 fit7g <- stan(
-  file = "03dan-stan.stan",  # Stan program
+  file = "Mod3Stan.stan",  # Stan program
   data = population_data7g,  # named list of data
   chains = 2,              # number of Markov chains
   warmup = 1000,           # number of warmup iterations per chain
